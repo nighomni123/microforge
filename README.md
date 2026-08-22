@@ -87,14 +87,28 @@ cap at 2 visible per viewport, and are dismissible when sticky. Analytics
 | `VITE_UMAMI_URL` + `VITE_UMAMI_ID` | Cookieless analytics. |
 | `VITE_GA_ID` | Optional GA4 instead. |
 
-## Deploy (Cloudflare Pages — free)
+## Deploy (Cloudflare Pages — GitHub-connected)
 
-1. Push this repo to GitHub.
-2. Cloudflare Pages → connect repo → build command `pnpm build`, output dir `dist`.
-3. Set `VITE_SITE_URL` (and later the ad/analytics vars) in the Pages project env.
-4. Add your domain, submit `sitemap.xml` in Google Search Console.
+The repo deploys via Cloudflare's native Git integration: every push to `main`
+triggers a fresh build on Cloudflare's CI.
+
+1. `git push -u origin main` (remote is preconfigured).
+2. dash.cloudflare.com → **Workers & Pages → Create → Pages → Connect to Git**
+   → authorize the Cloudflare GitHub App → pick `nighomni123/microforge`.
+3. Project settings:
+   - Project name: `microforge` · Production branch: `main`
+   - Framework preset: Vite
+   - Build command: `pnpm build`
+   - Build output directory: `/dist`
+   - Environment variables (Production + Preview):
+     `VITE_SITE_URL=https://microforge.pages.dev`, `NODE_VERSION=22`
+4. Save and Deploy — first build goes live at https://microforge.pages.dev.
+
+After that, shipping a tool = edit config → `git push`. CI runs the same gates
+(typecheck, config validation, tests-adjacent checks) before anything goes live.
 
 Netlify works as-is; GitHub Pages needs `base` config — not wired by default.
+Manual direct-upload remains available: `pnpm deploy:pages`.
 
 ## Rebranding
 
