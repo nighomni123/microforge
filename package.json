@@ -11,7 +11,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "gen": "tsx scripts/new-tool.ts",
-    "og": "tsx scripts/generate-og.ts"
+    "og": "tsx scripts/generate-og.ts",
+    "deploy": "pnpm build && wrangler pages deploy dist --project-name=microforge --branch=main"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -29,6 +30,7 @@
     "tsx": "^4.19.0",
     "typescript": "^5.8.0",
     "vite": "^6.3.5",
-    "vitest": "^3.1.0"
+    "vitest": "^3.1.0",
+    "wrangler": "^4.125.0"
   }
 }
