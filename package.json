@@ -12,7 +12,7 @@
     "test:watch": "vitest",
     "gen": "tsx scripts/new-tool.ts",
     "og": "tsx scripts/generate-og.ts",
-    "deploy": "pnpm build && wrangler pages deploy dist --project-name=microforge --branch=main"
+    "deploy:pages": "pnpm build && wrangler pages deploy dist --project-name=microforge --branch=main"
   },
   "dependencies": {
     "react": "^19.1.0",

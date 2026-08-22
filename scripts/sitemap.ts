@@ -18,6 +18,8 @@ interface SiteModule {
 }
 
 const vite = await createViteServer({
+  // Production mode: honors .env.production (VITE_SITE_URL) in SSR modules.
+  mode: 'production',
   server: { middlewareMode: true },
   appType: 'custom',
   logLevel: 'error',
