@@ -12,6 +12,11 @@ import { fileURLToPath } from 'node:url'
 import { createServer as createViteServer } from 'vite'
 import type { PageMeta } from '../src/lib/meta'
 
+// SSR modules read import.meta.env.PROD from process.env.NODE_ENV (not the
+// Vite server mode), so pin it BEFORE creating the server. Without this the
+// prerender treats the site as dev mode and leaks draft tools into listings.
+process.env.NODE_ENV = 'production'
+
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const distDir = path.join(projectRoot, 'dist')
 

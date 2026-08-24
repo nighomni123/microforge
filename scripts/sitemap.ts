@@ -2,6 +2,9 @@
  * Post-build step: generates dist/sitemap.xml and dist/robots.txt from the
  * live tool registry. Runs after prerender via `pnpm build`.
  */
+// SSR modules read import.meta.env.PROD from process.env.NODE_ENV (not the
+// Vite server mode) — pin it so the registry sees production visibility.
+process.env.NODE_ENV = 'production'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
