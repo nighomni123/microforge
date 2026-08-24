@@ -13,7 +13,7 @@ export default {
   category: 'planners',
   tags: ['wedding', 'budget', 'planning', 'events'],
   icon: '💍',
-  status: 'draft',
+  status: 'live',
   currencyCode: 'USD',
   description:
     'Set a total budget, enter your guest count, plate price and per-guest extras, and see instantly whether the day fits your budget — plus how many months of saving it would take to close any gap.',

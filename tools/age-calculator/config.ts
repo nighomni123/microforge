@@ -107,7 +107,7 @@ export default {
   category: 'calculators',
   tags: ['age', 'birthday', 'dates'],
   icon: '🎂',
-  status: 'draft',
+  status: 'live',
   autoCompute: true,
   description:
     'Calculate your exact age — not an approximation — from your date of birth: full years, remaining months and days, total days lived, and a countdown to your next birthday.',

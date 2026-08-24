@@ -13,7 +13,7 @@ export default {
   category: 'generators',
   tags: ['tournament', 'round robin', 'fixtures', 'scheduler'],
   icon: '🏆',
-  status: 'draft',
+  status: 'live',
   description:
     'Turn any player count into balanced teams and a complete round-robin fixture list — perfect for office games, esports nights, and sports days. Every team plays every other team, and the points table crowns the winner.',
   howItWorks:

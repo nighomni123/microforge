@@ -37,7 +37,7 @@ export default {
   category: 'generators',
   tags: ['design', 'placeholder-text', 'mockups'],
   icon: '📝',
-  status: 'draft',
+  status: 'live',
   description:
     'Generate clean lorem ipsum placeholder paragraphs for mockups, wireframes and templates — choose how many you need, optionally keep the classic opening, and copy instantly.',
   howItWorks:

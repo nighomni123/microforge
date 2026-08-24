@@ -17,7 +17,7 @@ export default {
   category: 'utilities',
   tags: ['password', 'security', 'cryptography', 'generator'],
   icon: '🔐',
-  status: 'draft',
+  status: 'live',
   description:
     'Create strong, random passwords backed by your device’s cryptographic random number generator. Choose a length and character sets, press generate, and copy — nothing ever leaves your browser.',
   howItWorks:

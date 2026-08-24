@@ -13,7 +13,7 @@ export default {
   category: 'planners',
   tags: ['study', 'exam prep', 'revision', 'schedule', 'planning'],
   icon: '📚',
-  status: 'draft',
+  status: 'live',
   description:
     'Enter your subjects, days until the exam, and weekly study hours to get an instant weekly study plan that rotates every subject through fixed sessions with cycling topics.',
   howItWorks:

@@ -14,7 +14,7 @@ export default {
   category: 'calculators',
   tags: ['percentage', 'percent change', 'math'],
   icon: '📊',
-  status: 'draft',
+  status: 'live',
   description:
     'Enter any two values and see every percentage answer at once — a percentage of a number, one number as a percent of another, and the percent change between them.',
   howItWorks:

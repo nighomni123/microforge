@@ -14,7 +14,7 @@ export default {
   category: 'converters',
   tags: ['height', 'conversion', 'units'],
   icon: '📏',
-  status: 'draft',
+  status: 'live',
   description:
     'Enter your height in centimeters and see it in feet and inches instantly, with total inches, meters, and decimal feet alongside.',
   howItWorks:

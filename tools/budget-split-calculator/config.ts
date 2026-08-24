@@ -13,7 +13,7 @@ export default {
   category: 'calculators',
   tags: ['budgeting', 'money', 'savings', 'personal finance'],
   icon: '💰',
-  status: 'draft',
+  status: 'live',
   currencyCode: 'USD',
   description:
     'Apply the classic 50/30/20 budget rule to your monthly take-home pay — or set any split you like. Enter your income and three percentages to instantly see dollar amounts for needs, wants, and savings, plus anything left unallocated.',

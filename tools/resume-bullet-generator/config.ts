@@ -13,7 +13,7 @@ export default {
   category: 'generators',
   tags: ['resume', 'career', 'job search', 'writing'],
   icon: '📄',
-  status: 'draft',
+  status: 'live',
   description:
     'Paste one accomplishment in plain words and get three polished resume bullet variants — concise, ownership-framed, and highlight-reel — plus a coaching tip to make each line stronger.',
   howItWorks:

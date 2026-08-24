@@ -13,7 +13,7 @@ export default {
   category: 'converters',
   tags: ['length', 'metric', 'imperial', 'conversion'],
   icon: '📐',
-  status: 'draft',
+  status: 'live',
   description:
     'Convert any length between metric and imperial units — millimeters, centimeters, meters, kilometers, inches, feet, yards and miles — in one step. Conversion factors are the exact post-1959 international definitions, and results are shown to four decimal places.',
   howItWorks:

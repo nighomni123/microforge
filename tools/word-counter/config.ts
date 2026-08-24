@@ -13,7 +13,7 @@ export default {
   category: 'utilities',
   tags: ['writing', 'word-count', 'text-analysis', 'productivity'],
   icon: '🔢',
-  status: 'draft',
+  status: 'live',
   description:
     'Count words, characters, sentences and paragraphs in real time, with an instant reading-time estimate — completely free and nothing leaves your browser.',
   howItWorks:

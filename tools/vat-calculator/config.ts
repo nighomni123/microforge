@@ -14,7 +14,7 @@ export default {
   category: 'calculators',
   tags: ['vat', 'tax', 'invoice'],
   icon: '🧾',
-  status: 'draft',
+  status: 'live',
   description:
     'A fast, currency-neutral VAT calculator: enter an amount plus a rate, say whether your figure excludes or includes VAT, and get the net, VAT, and gross values instantly.',
   howItWorks:

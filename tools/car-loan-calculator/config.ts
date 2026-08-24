@@ -13,7 +13,7 @@ export default {
   category: 'calculators',
   tags: ['auto-loan', 'car-payment', 'financing', 'interest'],
   icon: '🚗',
-  status: 'draft',
+  status: 'live',
   currencyCode: 'USD',
   description:
     'Work out what a car really costs per month: enter the vehicle price, down payment, APR, and loan term to see the amount financed, the monthly payment, and the total interest you would pay over the life of the loan.',

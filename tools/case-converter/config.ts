@@ -17,7 +17,7 @@ export default {
   category: 'utilities',
   tags: ['developer-tools', 'text-formatting', 'writing'],
   icon: '🔠',
-  status: 'draft',
+  status: 'live',
   description:
     'Convert text between seven cases — UPPER, lower, Title, Sentence, camelCase, snake_case and kebab-case — instantly, free, and entirely in your browser.',
   howItWorks:

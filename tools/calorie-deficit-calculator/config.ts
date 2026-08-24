@@ -14,7 +14,7 @@ export default {
   category: 'calculators',
   tags: ['calories', 'tdee', 'weight loss'],
   icon: '🍎',
-  status: 'draft',
+  status: 'live',
   description:
     'Enter your stats, activity level, and weekly loss goal to see your maintenance calories and a sensible daily target — based on the widely used Mifflin-St Jeor equation.',
   howItWorks:

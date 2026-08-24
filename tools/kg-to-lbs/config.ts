@@ -13,7 +13,7 @@ export default {
   category: 'converters',
   tags: ['weight', 'conversion', 'units'],
   icon: '⚖️',
-  status: 'draft',
+  status: 'live',
   description:
     'Type any weight in kilograms and see it converted to pounds instantly, with ounces, stones, and grams calculated alongside for US and UK readers.',
   howItWorks:

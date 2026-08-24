@@ -14,7 +14,7 @@ export default {
   category: 'calculators',
   tags: ['sales tax', 'receipt', 'shopping', 'usa'],
   icon: '🛒',
-  status: 'draft',
+  status: 'live',
   currencyCode: 'USD',
   description:
     'Calculate US sales tax in either direction: apply your combined state and local rate to a pre-tax price, or reverse the math on an out-the-door total to recover the original sticker price.',

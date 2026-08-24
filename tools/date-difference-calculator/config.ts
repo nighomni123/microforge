@@ -95,7 +95,7 @@ export default {
   category: 'calculators',
   tags: ['dates', 'duration', 'workdays'],
   icon: '📅',
-  status: 'draft',
+  status: 'live',
   autoCompute: true,
   description:
     'Measure exactly how much time separates two dates: total days, weeks, a full calendar breakdown in months and days, and how many of those days are working days rather than weekend days.',

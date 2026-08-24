@@ -13,7 +13,7 @@ export default {
   category: 'calculators',
   tags: ['rent', 'roommates', 'split'],
   icon: '🏠',
-  status: 'draft',
+  status: 'live',
   currencyCode: 'USD',
   description:
     'Enter the monthly rent, utilities, and both incomes to see what a fair split looks like — equal halves versus proportional to what each person earns.',
