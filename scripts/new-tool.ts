@@ -55,7 +55,7 @@ const config = `import type { ToolConfig } from '../../src/engine/schema'
 export default {
   slug: '${slug}',
   title: '${title.replace(/'/g, "\\'")}',
-  metaTitle: 'TODO: Unique SEO title for ${slug} (50-60 chars)',
+  metaTitle: 'TODO: Unique SEO title',
   metaDescription:
     'TODO: One-sentence value proposition with the main keyword, 80-155 characters long.',
   category: '${category}',

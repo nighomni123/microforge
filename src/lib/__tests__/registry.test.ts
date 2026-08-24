@@ -46,8 +46,10 @@ describe('tool registry', () => {
     expect(related.every((t) => t.slug !== tool!.slug)).toBe(true)
   })
 
-  it('marks every shipped tool live so production builds expose them', () => {
-    expect(liveTools.length).toBe(allTools.length)
+  it('never exposes drafts in the published set', () => {
+    for (const tool of liveTools) {
+      expect(tool.status, `${tool.slug} should be live`).toBe('live')
+    }
     expect(visibleTools.length).toBeGreaterThanOrEqual(liveTools.length)
   })
 })

@@ -158,7 +158,13 @@ export function ToolRenderer({ config }: { config: ToolConfig }) {
               <p className="text-sm font-medium text-slate-500 dark:text-slate-400">
                 {primaryOutput.label}
               </p>
-              <p className="mt-1 break-words text-4xl font-extrabold tracking-tight text-indigo-700 dark:text-indigo-300">
+              <p
+                className={
+                  primaryOutput.format === 'text'
+                    ? 'mt-1 whitespace-pre-line break-words text-lg font-semibold leading-relaxed text-slate-800 dark:text-slate-200'
+                    : 'mt-1 break-words text-4xl font-extrabold tracking-tight text-indigo-700 dark:text-indigo-300'
+                }
+              >
                 {formatValue(results[primaryOutput.id], {
                   format: primaryOutput.format,
                   decimals: primaryOutput.decimals,
@@ -168,9 +174,15 @@ export function ToolRenderer({ config }: { config: ToolConfig }) {
               {secondaryOutputs.length > 0 && (
                 <dl className="mt-4 divide-y divide-slate-200 text-sm dark:divide-slate-800">
                   {secondaryOutputs.map((output) => (
-                    <div key={output.id} className="flex items-center justify-between gap-3 py-2">
-                      <dt className="text-slate-500 dark:text-slate-400">{output.label}</dt>
-                      <dd className="font-semibold">
+                    <div key={output.id} className="flex items-start justify-between gap-3 py-2">
+                      <dt className="shrink-0 text-slate-500 dark:text-slate-400">{output.label}</dt>
+                      <dd
+                        className={
+                          output.format === 'text'
+                            ? 'whitespace-pre-line text-right font-semibold'
+                            : 'font-semibold'
+                        }
+                      >
                         {formatValue(results[output.id], {
                           format: output.format,
                           decimals: output.decimals,
