@@ -29,6 +29,7 @@ export const ToolInputSchema = z
     step: z.number().positive().optional(),
     help: z.string().max(200).optional(),
     placeholder: z.string().max(80).optional(),
+    multiline: z.boolean().optional(),
     options: z
       .array(
         z.object({

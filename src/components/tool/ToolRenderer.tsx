@@ -270,6 +270,16 @@ function ToolInputField({
               </option>
             ))}
           </select>
+        ) : isText && input.multiline ? (
+          <textarea
+            id={fieldId}
+            rows={7}
+            value={value}
+            placeholder={input.placeholder}
+            spellCheck={false}
+            onChange={(event) => onChange(input.id, event.target.value)}
+            className="w-full rounded-xl bg-transparent px-3 py-2 outline-none"
+          />
         ) : (
           <input
             id={fieldId}

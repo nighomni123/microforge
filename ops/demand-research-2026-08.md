@@ -88,3 +88,22 @@ Structural options that remain open:
 3. B2B embeddable widgets for niche publishers (different business)
 4. Run existing 5 live tools as zero-investment experiments; watch for
    organic signal before investing anything further
+
+## Strategy update — user decision (supersedes "stop building")
+
+User directive: don't hunt gaps; clone the PROVEN highest-volume SEO tool
+pages and win on execution. Volume evidence gathered:
+
+- rapidtables.com ~88M visits/mo (global rank #41) — tiny conversion pages
+- wheelofnames.com 9.6M/mo US — a classroom wheel
+- wordcounter.net ≈10M/mo class · qr-code-generator.com 1.8M US/mo
+- "age calculator": 305K US / 5.18M GLOBAL monthly searches
+- "time calculator" 345K · "tip calculator" 321K · "online calculator" 323K
+
+Phase 1 shipped (existing engine): age, date-difference, percentage,
+word-counter, case-converter, lorem-ipsum, kg-to-lbs, cm-to-feet,
+vat-calculator, sales-tax, password-generator.
+Phase 2 candidates (need new templates, biggest prizes): wheel spinner
+(canvas), online stopwatch/timer (interval engine — classroom gold),
+image compressor/resizer (canvas), invoice generator (print PDF),
+QR generator (lib dep).

@@ -29,6 +29,17 @@ Resume Bullet Generator,generators,web,8,6,6,6,7,6.80,draft,/generators/resume-b
 Subscription Cost Calculator,calculators,web,6,7,9,5,9,6.55,backlog,,subscription cost tracker monthly,,recurring list -> monthly/yearly totals,formula-v1,,,,
 Invoice Tax Calculator,calculators,web,6,7,9,6,7,6.60,backlog,,invoice tax calculator,,subtotal x region rate select,formula-v1,,,,
 Tournament Schedule Generator,generators,web,6,6,8,5,10,6.65,draft,/generators/tournament-schedule-generator,tournament schedule generator,,players+teams -> balanced teams + full round-robin fixtures text,custom-v1,,,,User-requested build; round-robin circle method
+Age Calculator,calculators,web,10,3,9,6,10,7.80,draft,/calculators/age-calculator,age calculator,,DOB->calendar-exact Y/M/D + next birthday,custom-v1,,,,305K US / 5.18M global kw; execution-play vs calculator.net
+Percentage Calculator,calculators,web,9,4,9,5,10,7.50,draft,/calculators/percentage-calculator,percentage calculator,,3 modes shown simultaneously live,formula-v1,,,,Evergreen top-100 kw family
+Sales Tax Calculator,calculators,web,8,5,9,7,10,7.50,draft,/calculators/sales-tax-calculator,sales tax calculator,,add/remove direction + state examples,formula-v1,,,,Commerce evergreen
+KG to Lbs Converter,converters,web,10,2,10,4,10,7.50,draft,/converters/kg-to-lbs,kg to lbs,,single-intent page + oz/stones bonus,converter-v1,,,,rapidtables-class play
+CM to Feet Converter,converters,web,10,2,10,4,10,7.50,draft,/converters/cm-to-feet,cm to feet,,height text + inches + meters,custom-v1,,,,Same rapidtables play
+VAT Calculator,calculators,web,7,6,9,7,10,7.50,draft,/calculators/vat-calculator,vat calculator,,rate presets + add/remove directions,custom-v1,,,,UK/EU commerce evergreen
+Date Difference Calculator,calculators,web,8,5,9,5,10,7.35,draft,/calculators/date-difference-calculator,days between dates,,business days + weekend split,custom-v1,,,,time calculator 345K kw adjacent
+Password Generator,utilities,web,10,2,8,5,10,7.25,draft,/utilities/password-generator,password generator,,CSPRNG + rejection sampling + entropy bits,custom-v1,,,,passwordsgenerator.net-class volume
+Word Counter,utilities,web,9,3,9,6,10,7.20,draft,/utilities/word-counter,word counter,,words/chars/sentences/reading time live,custom-v1,,,,wordcounter.net 10M-class site
+Case Converter,utilities,web,8,4,10,4,10,7.20,draft,/utilities/case-converter,case converter,,7 transforms incl camel/snake/kebab,custom-v1,,,,Writer/dev staple
+Lorem Ipsum Generator,generators,web,7,4,10,4,10,6.80,draft,/generators/lorem-ipsum-generator,lorem ipsum generator,,seeded PRNG paragraphs,custom-v1,,,,Below threshold; cheap filler while infra is warm
 Reaction Time Test,quizzes,game-web,7,5,6,6,9,6.55,backlog,,reaction time test,,click-on-green ms score best-of-5,game-v1,,,,Needs game template phase
 Gym Routine Generator,generators,web,7,6,6,6,7,6.55,backlog,,workout routine generator,,goal+days split templates,generator-v1,,,,Content-heavy; needs care
 Word Scramble Game,quizzes,game-web,7,6,5,6,8,6.35,backlog,,word scramble game,,word list + shuffle + guess loop,game-v1,,,,
