@@ -57,3 +57,34 @@ level; in 2026 they don't. Scoring ideas 7+ on Gap is wishful thinking.
 - New-build bar raised: no build without (a) MCP probe showing <3 real
   competitors OR a documented staleness/complaint gap, AND (b) a named
   distribution channel (subreddit/community/newsletter).
+
+## Round 2 — community/pain-language probes (10 more)
+
+Searched pain language ("how do you all…", "spreadsheet", "nightmare")
+instead of "[niche] calculator", targeting passion communities:
+
+| Community | Pain probed | Verdict |
+|---|---|---|
+| r/ukpersonalfinance | take-home w/ student loans + sacrifice | ❌ payslipcheck.co.uk, taxcal.uk et al., all 2026/27-fresh |
+| India r/IndiaInvestments | new-vs-old regime | ❌ govt's own calculator + taxmath.in, sum.money… |
+| r/EtsySellers | true profit after fees | ❌ 8+, one badged "Verified August 7 2026" |
+| Gig driver subs | net hourly after gas/depreciation | ❌ 10+ incl. 2026 tips-tax-aware tools |
+| Van life | solar/battery sizing | ❌ 9+ full electrical designers |
+| r/dndnext | encounter balance / loot split | ❌ Kobold Plus + dndmetrics (15k-encounter model) + d20-loot-tracker |
+| r/weddingplanning | seating chart solver | ❌ SeatCanvas, seating-chart-maker.com, wedibox |
+| Planted tanks | EI fertilizer dosing | ❌ Rotala Butterfly is a 15-year community standard |
+| Teachers | weighted + drop-lowest gradebook | ⚠️ thinnest found: people still hand-roll Excel SMALL() formulas on math forums; but demand signals are old forum threads, LMSs bundle the feature, teachers = weak RPM |
+
+## Verdict after 24 probes
+
+No idea-shaped hole exists in this market at any freshness level, any
+geography tested, or any niche passion tested. Every category winner got
+there through community embeddedness or brand, not through the tool being
+unbuilt. Further ideation sweeps have negative expected value.
+
+Structural options that remain open:
+1. Embed in ONE community and build what they beg for (slow, human)
+2. Suite-with-memory workflow play (unproven demand)
+3. B2B embeddable widgets for niche publishers (different business)
+4. Run existing 5 live tools as zero-investment experiments; watch for
+   organic signal before investing anything further
