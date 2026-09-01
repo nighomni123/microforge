@@ -120,4 +120,14 @@ export default {
     'monthly car payment estimator',
     'total interest on car loan',
   ],
+  affiliate: {
+    heading: 'Compare real loan offers',
+    offers: [
+      {
+        label: 'Pre-qualify with multiple lenders',
+        url: 'https://example.com/affiliate/car-loan-placeholder',
+        note: 'See actual APRs without a hard credit pull.',
+      },
+    ],
+  },
 } satisfies ToolConfig

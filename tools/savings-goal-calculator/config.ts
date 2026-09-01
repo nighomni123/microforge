@@ -111,4 +111,19 @@ export default {
     'savings calculator with interest',
     'when will I reach my savings goal',
   ],
+  affiliate: {
+    heading: 'Put your savings to work',
+    offers: [
+      {
+        label: 'High-yield savings account',
+        url: 'https://example.com/affiliate/hysa-placeholder',
+        note: 'Earn a higher APY than a typical checking account.',
+      },
+      {
+        label: 'Track your goals in Simplifi',
+        url: 'https://example.com/affiliate/simplifi-placeholder',
+        note: 'Budget and savings in one app.',
+      },
+    ],
+  },
 } satisfies ToolConfig

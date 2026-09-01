@@ -85,6 +85,16 @@ export default {
     'tax out of total',
     'purchase tax calculator',
   ],
+  affiliate: {
+    heading: 'Filing season coming up?',
+    offers: [
+      {
+        label: 'File taxes with TurboTax',
+        url: 'https://example.com/affiliate/turbotax-placeholder',
+        note: 'Step-by-step filing for simple and complex returns.',
+      },
+    ],
+  },
   autoCompute: true,
   customCompute(inputs) {
     const price = Number(inputs.price)

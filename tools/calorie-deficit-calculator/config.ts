@@ -154,4 +154,14 @@ export default {
     'mifflin st jeor calculator',
     'maintenance calories calculator',
   ],
+  affiliate: {
+    heading: 'Stay on track',
+    offers: [
+      {
+        label: 'Log meals and macros',
+        url: 'https://example.com/affiliate/food-tracking-placeholder',
+        note: 'Track calories against your daily target.',
+      },
+    ],
+  },
 } satisfies ToolConfig

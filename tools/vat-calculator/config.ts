@@ -89,6 +89,16 @@ export default {
     'vat backwards calculator',
     'uk vat calculator',
   ],
+  affiliate: {
+    heading: 'Run the numbers for your business',
+    offers: [
+      {
+        label: 'Invoicing made easy',
+        url: 'https://example.com/affiliate/invoicing-placeholder',
+        note: 'Generate VAT-compliant invoices without the spreadsheet math.',
+      },
+    ],
+  },
   autoCompute: true,
   customCompute(inputs) {
     const amount = Number(inputs.amount)

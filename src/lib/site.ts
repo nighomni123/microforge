@@ -11,4 +11,6 @@ export const SITE = {
     'MicroForge is a growing collection of free calculators, generators and utilities that run entirely in your browser — no sign-up, no downloads, no clutter.',
   contactEmail: 'hello@microforge.example',
   url: ((env.VITE_SITE_URL as string | undefined)?.replace(/\/+$/, '')) || 'http://localhost:4173',
+  // Subdomain microsite that serves the downloadable Office templates.
+  templatesUrl: 'https://templates-microforge.pages.dev',
 } as const

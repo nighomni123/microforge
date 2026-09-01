@@ -5,11 +5,26 @@ Never build an idea because it sounds fun. Build it because the math says so.
 ## The formula
 
 ```
-Priority = Demand×0.35 + CompetitionGap×0.20 + BuildSpeed×0.20 + Monetization×0.15 + LowRisk×0.10
+Priority = Demand×0.30 + CompetitionGap×0.20 + BuildSpeed×0.15 + Monetization×0.25 + LowRisk×0.10
 ```
 
 Score each dimension 1–10, then compute. **Threshold: ≥ 7.0 to enter the build queue.**
 Anything below 7 goes back to the backlog with a note on what would raise it.
+
+**Hard floors (enforced at the spec stage):**
+- **Monetization ≥ 6** — the factory ships a product, not a portfolio. If the only
+  revenue path is "maybe 10-second-bounce display ads," it does not build.
+- **Build Speed ≥ 6** unless Distribution is a named, active community — slow builds
+  need a moat that an existing template cannot provide.
+
+## Why the weights changed (2026-Q3)
+
+The original 0.15 weight on Monetization treated revenue as a soft signal and let
+plenty of clean, unspendable utilities into the build queue. Once `affiliate` offers
+became a first-class field on every config, intent-matched tools earn a real cut at
+the moment of intent — and the build queue should reflect that, not filter against
+it. Lower Build Speed weight + a hard monetization floor keeps the factory's unit
+economics honest without losing the speed advantage.
 
 ## Dimension rubrics
 
@@ -39,13 +54,13 @@ Evidence sources: Google Trends, autocomplete depth, "People also ask", Play Sto
 | 4–6 | New interaction pattern (timer engine, canvas game) |
 | 1–3 | Backend, auth, paid APIs, or heavy content production |
 
-### 4. Monetization (weight 0.15)
-Ask: will users *linger* near an ad without being annoyed?
+### 4. Monetization (weight 0.25, hard floor ≥ 6)
+Ask: can this tool monetize at the moment of intent, not just at the moment of impression?
 | Score | Signals |
 |---|---|
-| 8–10 | Repeat-use tool with natural result-screen dwell time; rewarded-ad potential |
-| 5–7 | Single-visit utility with clean result placement |
-| 2–4 | Ten-second bounce usage (converters) |
+| 8–10 | Intent-rich result screen with a clear next-action affiliate (loan, tax, banking, software); or repeat-use tool suited to Pro/sync tier |
+| 6–7 | Single-visit utility with display ad support once traffic consolidates |
+| 2–5 | Ten-second bounce usage with no affiliate hook (converters, simple lorem-ipsum, etc.) — these do not build |
 
 ### 5. Low Risk (weight 0.10)
 Start at 10 and subtract for: medical/financial advice adjacency (−3), trademark-adjacent naming (−5), gambling-like mechanics (−5), child-directed complexity (−3), data sensitivity (−3).
@@ -54,7 +69,7 @@ Start at 10 and subtract for: medical/financial advice adjacency (−3), tradema
 
 **Rent Split Calculator**: Demand 8, Gap 6, Speed 9, Money 6, Risk 9.
 ```
-8×0.35 + 6×0.20 + 9×0.20 + 6×0.15 + 9×0.10 = 2.8 + 1.2 + 1.8 + 0.9 + 0.9 = 7.60 → BUILD
+8×0.30 + 6×0.20 + 9×0.15 + 6×0.25 + 9×0.10 = 2.4 + 1.2 + 1.35 + 1.50 + 0.90 = 7.35 → BUILD
 ```
 
 ## Decision rules after launch

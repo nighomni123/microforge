@@ -34,6 +34,14 @@ export function Header() {
           <NavLink to="/about" className={linkClass}>
             About
           </NavLink>
+          <a
+            href={SITE.templatesUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-lg px-2 py-1.5 text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800"
+          >
+            Templates
+          </a>
           <ThemeToggle />
         </nav>
       </div>

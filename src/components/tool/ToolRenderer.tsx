@@ -5,6 +5,7 @@ import { currencySymbol, formatValue } from '../../engine/format'
 import type { ToolConfig, ToolInput } from '../../engine/schema'
 import { track } from '../../lib/analytics'
 import { ShareButton } from '../ShareButton'
+import { AffiliateBlock } from './AffiliateBlock'
 
 type Values = Record<string, string>
 type ResultMap = Record<string, string | number>
@@ -216,6 +217,12 @@ export function ToolRenderer({ config }: { config: ToolConfig }) {
           )}
         </div>
       </div>
+
+      {config.affiliate && (
+        <div className="mt-6">
+          <AffiliateBlock toolSlug={config.slug} affiliate={config.affiliate} />
+        </div>
+      )}
     </section>
   )
 }

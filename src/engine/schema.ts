@@ -102,6 +102,25 @@ export const FaqItemSchema = z.object({
   answer: z.string().min(20).max(1000),
 })
 
+/**
+ * An affiliate partner offer surfaced at the moment of intent.
+ * Rendered with a disclosure label and `rel="sponsored nofollow noopener"`;
+ * clicks are consent-gated and tracked via `track('affiliate_click', …)`.
+ */
+export const AffiliateOfferSchema = z.object({
+  label: z.string().min(3).max(60),
+  url: z.string().url('must be an absolute https URL'),
+  note: z.string().min(10).max(160).optional(),
+})
+
+export const ToolAffiliateSchema = z.object({
+  heading: z.string().min(3).max(80).optional(),
+  offers: z.array(AffiliateOfferSchema).min(1).max(4),
+})
+
+export type AffiliateOffer = z.infer<typeof AffiliateOfferSchema>
+export type ToolAffiliate = z.infer<typeof ToolAffiliateSchema>
+
 export const ToolConfigSchema = z.object({
   slug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/, 'must be a kebab-case slug'),
   title: z.string().min(3).max(80),
@@ -123,6 +142,7 @@ export const ToolConfigSchema = z.object({
   status: z.enum(['draft', 'live']).default('draft'),
   actionLabel: z.string().min(2).max(30).optional(),
   autoCompute: z.boolean().optional(),
+  affiliate: ToolAffiliateSchema.optional(),
 })
 
 export type ToolConfigData = z.infer<typeof ToolConfigSchema>

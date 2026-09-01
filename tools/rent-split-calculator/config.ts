@@ -124,4 +124,14 @@ export default {
     'fair rent calculator',
     'roommate rent division',
   ],
+  affiliate: {
+    heading: 'Renting soon?',
+    offers: [
+      {
+        label: 'See what rent looks like in your city',
+        url: 'https://example.com/affiliate/rent-placeholder',
+        note: 'Compare listings and set a realistic budget.',
+      },
+    ],
+  },
 } satisfies ToolConfig

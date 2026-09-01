@@ -127,4 +127,14 @@ export default {
     'needs vs wants budget',
     'take home pay budget',
   ],
+  affiliate: {
+    heading: 'Make the budget stick',
+    offers: [
+      {
+        label: 'Simplify budgeting with Simplifi',
+        url: 'https://example.com/affiliate/simplifi-placeholder',
+        note: 'Track spending and savings in one place.',
+      },
+    ],
+  },
 } satisfies ToolConfig
